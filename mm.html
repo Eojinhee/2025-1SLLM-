@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLLM 챗봇</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>어진희의 프로젝트 </h1>
+    </div>
+
+    <div id="chatContainer">
+        <div id="chatBox"></div>
+        <div id="error" class="hidden"></div>
+        <div id="loading" class="hidden text-center">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div id="inputArea">
+        <input type="text" id="userInput" placeholder="질문을 작성 하시오" />
+        <button onclick="sendMessage()" id="sendBtn">입력</button>
+    </div>
+
+    <div id="responseTime"></div>
+
+    <script src="mm.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
